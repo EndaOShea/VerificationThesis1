@@ -3,7 +3,7 @@ public interface Student { // Listing 7.1
     public static final int bachelor = 0;
     public static final int master = 1;
 
-    public /*@ pure @*/ String getName(); 
+    public /*@ spec_public pure @*/ String getName(); 
 
     //@ ensures \result == bachelor || \result == master;
     public /*@ pure @*/ int getStatus();
