@@ -1,0 +1,140 @@
+KRAKATOALIB is not set, using /usr/local/lib/why as default
+KRAKATOACLASSPATH is not set, using /usr/local/lib/why/java_api as default
+Reading toplevel packages
+reading directory '.'
+got sub-directory KeY
+got sub-directory WhyML
+file krakatoa.log ignored
+file jessie.log ignored
+got sub-directory Krakatoa
+got sub-directory OpenJML
+adding subpackage OpenJML
+adding subpackage Krakatoa
+adding subpackage WhyML
+adding subpackage KeY
+reading directory '/usr/local/lib/why/java_api'
+got sub-directory java
+adding subpackage java
+reading directory '/usr/local/lib/why/java_api/java'
+got sub-directory io
+got sub-directory util
+got sub-directory lang
+adding subpackage lang
+adding subpackage util
+adding subpackage io
+reading directory '/usr/local/lib/why/java_api/java/lang'
+got Java file Double
+got Java file Math
+got Java file Throwable
+got Java file RuntimeException
+got Java file IllegalArgumentException
+got Java file String
+got Java file CharSequence
+got Java file ArrayStoreException
+got Java file System
+got Java file Number
+got Java file Comparable
+got Java file Cloneable
+got Java file Class
+got Java file StringBuffer
+got Java file Exception
+got Java file Character
+got Java file Integer
+got Java file NumberFormatException
+got Java file Object
+got Java file Long
+adding java file Long (fullname /usr/local/lib/why/java_api/java/lang/Long.java)
+adding java file Object (fullname /usr/local/lib/why/java_api/java/lang/Object.java)
+adding java file NumberFormatException (fullname /usr/local/lib/why/java_api/java/lang/NumberFormatException.java)
+adding java file Integer (fullname /usr/local/lib/why/java_api/java/lang/Integer.java)
+adding java file Character (fullname /usr/local/lib/why/java_api/java/lang/Character.java)
+adding java file Exception (fullname /usr/local/lib/why/java_api/java/lang/Exception.java)
+adding java file StringBuffer (fullname /usr/local/lib/why/java_api/java/lang/StringBuffer.java)
+adding java file Class (fullname /usr/local/lib/why/java_api/java/lang/Class.java)
+adding java file Cloneable (fullname /usr/local/lib/why/java_api/java/lang/Cloneable.java)
+adding java file Comparable (fullname /usr/local/lib/why/java_api/java/lang/Comparable.java)
+adding java file Number (fullname /usr/local/lib/why/java_api/java/lang/Number.java)
+adding java file System (fullname /usr/local/lib/why/java_api/java/lang/System.java)
+adding java file ArrayStoreException (fullname /usr/local/lib/why/java_api/java/lang/ArrayStoreException.java)
+adding java file CharSequence (fullname /usr/local/lib/why/java_api/java/lang/CharSequence.java)
+adding java file String (fullname /usr/local/lib/why/java_api/java/lang/String.java)
+adding java file IllegalArgumentException (fullname /usr/local/lib/why/java_api/java/lang/IllegalArgumentException.java)
+adding java file RuntimeException (fullname /usr/local/lib/why/java_api/java/lang/RuntimeException.java)
+adding java file Throwable (fullname /usr/local/lib/why/java_api/java/lang/Throwable.java)
+adding java file Math (fullname /usr/local/lib/why/java_api/java/lang/Math.java)
+adding java file Double (fullname /usr/local/lib/why/java_api/java/lang/Double.java)
+importing package java.lang
+adding class Object in package lang
+importing package java.lang
+adding class String in package lang
+importing package java.lang
+importing package java.io
+adding class Throwable in package lang
+importing package java.lang
+adding class Exception in package lang
+(****** typing phase *****)
+importing package java.lang
+adding class BinarySearch in package 
+reading directory '.'
+got sub-directory KeY
+got sub-directory WhyML
+file krakatoa.log ignored
+file jessie.log ignored
+got sub-directory Krakatoa
+got sub-directory OpenJML
+(****** typing phase 2 : get bodies *****)
+(****** typing phase 3 : type specs *****)
+***********************************
+Logic call graph: has 7 components
+***********************************
+Component 0:
+ \real_abs calls: 
+
+Component 1:
+ is_sorted calls: 
+
+Component 2:
+ \int_max calls: 
+
+Component 3:
+ \int_min calls: 
+
+Component 4:
+ \real_max calls: 
+
+Component 5:
+ \cos calls: 
+
+Component 6:
+ \real_min calls: 
+
+******************************
+Call graph: has 2 components
+******************************
+Component 0:
+ - BinarySearch calls: 
+
+Component 1:
+ - BinarySearch.binary_search calls: 
+
+Adding array struct for type int under name int
+production phase 1.1 : generation of Jessie logic types
+production phase 1.2 : generation of Jessie range_types
+(**********************)
+(* array types        *)
+(**********************)
+intM
+production phase 1.3 : generation of Jessie struct types
+Creating JC structure for class 'String'
+Creating JC structure for class 'BinarySearch'
+Creating JC structure for class 'Throwable'
+Creating JC structure for class 'Object'
+Creating JC structure for class 'Exception'
+production phase 1.4 : generation of Jessie logic functions
+generating logic function `\cos'
+generating logic function `\real_abs'
+generating logic function `\real_max'
+generating logic function `\real_min'
+generating logic function `\int_max'
+generating logic function `\int_min'
+generating logic function `is_sorted'

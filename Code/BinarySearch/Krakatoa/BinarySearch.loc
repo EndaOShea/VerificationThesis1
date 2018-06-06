@@ -1,0 +1,725 @@
+[JC_94]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_73]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 17
+end = 23
+
+[JC_63]
+kind = UserCall
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 37
+begin = 16
+end = 24
+
+[BinarySearch_binary_search_ensures_success]
+name = "Method binary_search"
+behavior = "Behavior `success'"
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 36
+begin = 15
+end = 28
+
+[JC_80]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 17
+end = 34
+
+[JC_51]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 28
+begin = 16
+end = 29
+
+[JC_71]
+kind = DivByZero
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 48
+begin = 16
+end = 27
+
+[JC_45]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_106]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_64]
+kind = IndexBounds
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 37
+begin = 16
+end = 24
+
+[JC_99]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 23
+
+[JC_85]
+kind = DivByZero
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 48
+begin = 16
+end = 27
+
+[JC_31]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 55
+begin = 8
+end = 23
+
+[JC_17]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_81]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 34
+
+[JC_55]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 28
+begin = 22
+end = 40
+
+[BinarySearch_binary_search_ensures_failure]
+name = "Method binary_search"
+behavior = "Behavior `failure'"
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 36
+begin = 15
+end = 28
+
+[JC_48]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_23]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 51
+begin = 11
+end = 103
+
+[JC_22]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_5]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_67]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 34
+
+[JC_9]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 42
+begin = 8
+end = 21
+
+[JC_75]
+kind = PointerDeref
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 50
+begin = 9
+end = 13
+
+[JC_24]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 50
+begin = 10
+end = 18
+
+[JC_25]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 51
+begin = 11
+end = 103
+
+[JC_78]
+kind = UserCall
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 37
+begin = 16
+end = 24
+
+[JC_41]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_74]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 23
+
+[JC_47]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 27
+begin = 17
+end = 26
+
+[JC_52]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 28
+begin = 22
+end = 40
+
+[JC_26]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 50
+begin = 10
+end = 18
+
+[JC_8]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[cons_BinarySearch_safety]
+name = "Constructor of class BinarySearch"
+behavior = "Safety"
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_54]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 28
+begin = 16
+end = 29
+
+[JC_79]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 13
+
+[JC_13]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 45
+begin = 11
+end = 66
+
+[JC_82]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_87]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 17
+end = 23
+
+[JC_11]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 42
+begin = 8
+end = 21
+
+[JC_98]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 17
+end = 23
+
+[JC_70]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_15]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 45
+begin = 11
+end = 66
+
+[JC_36]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_104]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 34
+
+[JC_91]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 17
+end = 34
+
+[JC_39]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_40]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_83]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_35]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_27]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_109]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 18
+
+[JC_107]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_69]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_38]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 57
+begin = 11
+end = 65
+
+[JC_12]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_6]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_44]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_4]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_62]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 33
+begin = 17
+end = 96
+
+[JC_101]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 42
+begin = 8
+end = 74
+
+[JC_88]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 23
+
+[JC_42]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_110]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 17
+end = 23
+
+[JC_103]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 17
+end = 34
+
+[JC_46]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_61]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 33
+begin = 17
+end = 96
+
+[JC_32]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_56]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 28
+begin = 16
+end = 40
+
+[JC_33]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_65]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 13
+
+[JC_105]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_29]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 55
+begin = 8
+end = 23
+
+[BinarySearch_binary_search_ensures_default]
+name = "Method binary_search"
+behavior = "default behavior"
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 36
+begin = 15
+end = 28
+
+[JC_68]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_7]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_16]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 44
+begin = 10
+end = 18
+
+[JC_96]
+kind = DivByZero
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 48
+begin = 16
+end = 27
+
+[JC_43]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_2]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_95]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_93]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[cons_BinarySearch_ensures_default]
+name = "Constructor of class BinarySearch"
+behavior = "default behavior"
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_97]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 18
+
+[JC_84]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 94
+begin = 12
+end = 1265
+
+[JC_34]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_14]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 44
+begin = 10
+end = 18
+
+[JC_90]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 13
+
+[JC_53]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 28
+begin = 16
+end = 40
+
+[JC_21]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 48
+begin = 8
+end = 30
+
+[JC_111]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 23
+
+[JC_77]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 44
+begin = 7
+end = 10
+
+[JC_49]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 27
+begin = 17
+end = 26
+
+[JC_1]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 13
+begin = 12
+end = 22
+
+[JC_102]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 13
+
+[JC_37]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 57
+begin = 11
+end = 65
+
+[BinarySearch_binary_search_safety]
+name = "Method binary_search"
+behavior = "Safety"
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 36
+begin = 15
+end = 28
+
+[JC_10]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_108]
+kind = DivByZero
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 48
+begin = 16
+end = 27
+
+[JC_57]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_89]
+kind = UserCall
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 37
+begin = 16
+end = 24
+
+[JC_66]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 17
+end = 34
+
+[JC_59]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 30
+begin = 18
+end = 50
+
+[JC_20]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_18]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_3]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 13
+begin = 12
+end = 22
+
+[JC_92]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 39
+begin = 7
+end = 34
+
+[JC_86]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 18
+
+[JC_60]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 30
+begin = 18
+end = 50
+
+[JC_72]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 49
+begin = 12
+end = 18
+
+[JC_19]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.jc"
+line = 48
+begin = 8
+end = 30
+
+[JC_76]
+kind = PointerDeref
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 51
+begin = 14
+end = 18
+
+[JC_50]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_30]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_58]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+
+[JC_100]
+kind = UserCall
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/Krakatoa/BinarySearch.java"
+line = 37
+begin = 16
+end = 24
+
+[JC_28]
+file = "/home/eo37/Desktop/Thesis/Code/BinarySearch/"
+line = 0
+begin = -1
+end = -1
+

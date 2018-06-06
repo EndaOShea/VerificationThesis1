@@ -1,0 +1,632 @@
+WHYLIB is not set, using /usr/local/lib/why as default
+Parsing
+Normalization
+Typing logic labels
+Typing code
+Typing tag String
+Typing tag BinarySearch
+Typing tag Throwable
+Typing tag Object
+Typing tag Exception
+Typing tag interface
+Typing tag intM
+Computation of call graph
+***********************************
+Logic call graph: has 3 components
+***********************************
+Component 0:
+ Non_null_intM calls: 
+
+Component 1:
+ Non_null_Object calls: 
+
+Component 2:
+ is_sorted calls: Non_null_intM
+
+******************************
+Call graph: has 6 components
+******************************
+Component 0:
+ any_string calls: 
+
+Component 1:
+ non_null_intM calls: 
+
+Component 2:
+ java_array_length_intM calls: 
+
+Component 3:
+ non_null_Object calls: 
+
+Component 4:
+ cons_BinarySearch calls: 
+
+Component 5:
+ BinarySearch_binary_search calls: java_array_length_intM
+
+Adding invariants
+Computation of effects
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects for logic function Non_null_intM:
+ alloc_table: (alloc-root(Object),dummy_region) (Here)
+ tag_table: 
+ memories: 
+ raw memories: 
+ precise memories: 
+ globals: 
+ locals: 
+
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects for logic function Non_null_Object:
+ alloc_table: (alloc-root(Object),dummy_region) (Here)
+ tag_table: 
+ memories: 
+ raw memories: 
+ precise memories: 
+ globals: 
+ locals: 
+
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects for logic function is_sorted:
+ alloc_table: (alloc-root(Object),dummy_region) (L)
+ tag_table: 
+ memories: (mem-field(intP),dummy_region) (L)
+ raw memories: 
+ precise memories: 
+ globals: 
+ locals: 
+
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects: removing global reads w/o writes
+Effects for function any_string:
+ reads:  alloc_table: 
+         tag_table: 
+         memories: 
+         raw memories: 
+         precise memories: 
+         globals: 
+         locals: 
+
+ writes:  alloc_table: 
+          tag_table: 
+          memories: 
+          raw memories: 
+          precise memories: 
+          globals: 
+          locals: 
+
+ raises: 
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects: removing global reads w/o writes
+Effects for function non_null_intM:
+ reads:  alloc_table: (alloc-root(Object),dummy_region) (Here)
+         tag_table: 
+         memories: 
+         raw memories: 
+         precise memories: 
+         globals: 
+         locals: 
+
+ writes:  alloc_table: 
+          tag_table: 
+          memories: 
+          raw memories: 
+          precise memories: 
+          globals: 
+          locals: 
+
+ raises: 
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects: removing global reads w/o writes
+Effects for function java_array_length_intM:
+ reads:  alloc_table: (alloc-root(Object),dummy_region) (Here, Old)
+         tag_table: 
+         memories: 
+         raw memories: 
+         precise memories: 
+         globals: 
+         locals: 
+
+ writes:  alloc_table: 
+          tag_table: 
+          memories: 
+          raw memories: 
+          precise memories: 
+          globals: 
+          locals: 
+
+ raises: 
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects: removing global reads w/o writes
+Effects for function non_null_Object:
+ reads:  alloc_table: (alloc-root(Object),dummy_region) (Here)
+         tag_table: 
+         memories: 
+         raw memories: 
+         precise memories: 
+         globals: 
+         locals: 
+
+ writes:  alloc_table: 
+          tag_table: 
+          memories: 
+          raw memories: 
+          precise memories: 
+          globals: 
+          locals: 
+
+ raises: 
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects: removing global reads w/o writes
+Effects for function cons_BinarySearch:
+ reads:  alloc_table: (alloc-root(Object),dummy_region) (Old)
+         tag_table: 
+         memories: 
+         raw memories: 
+         precise memories: 
+         globals: 
+         locals: 
+
+ writes:  alloc_table: 
+          tag_table: 
+          memories: 
+          raw memories: 
+          precise memories: 
+          globals: 
+          locals: 
+
+ raises: 
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: doing one iteration...
+Effects: fixpoint reached
+Effects: removing global reads w/o writes
+Effects for function BinarySearch_binary_search:
+ reads:  alloc_table: (alloc-root(Object),dummy_region) (Here, Old)
+         tag_table: 
+         memories: (mem-field(intP),dummy_region) (Here)
+         raw memories: (mem-field(intP),dummy_region) (Here)
+         precise memories: 
+         globals: 
+         locals: m (Here), u (Here), l (Here)
+
+ writes:  alloc_table: 
+          tag_table: 
+          memories: 
+          raw memories: 
+          precise memories: 
+          globals: 
+          locals: m (Here), u (Here), l (Here)
+
+ raises: 
+Translate logic types
+Translate structures
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Exception):
+  Found 1 allocs.
+all_memories(tag Exception):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag String):
+  Found 1 allocs.
+all_memories(tag String):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag Throwable):
+  Found 1 allocs.
+all_memories(tag Throwable):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+all_allocs(tag interface):
+  Found 1 allocs.
+all_memories(tag interface):
+  Found 0 memories.
+Translate variants
+all_allocs(root Object):
+  Found 1 allocs.
+all_memories(root Object):
+  Found 0 memories.
+all_allocs(root Object):
+  Found 1 allocs.
+all_memories(root Object):
+  Found 0 memories.
+all_allocs(root interface):
+  Found 1 allocs.
+all_memories(root interface):
+  Found 0 memories.
+all_allocs(root interface):
+  Found 1 allocs.
+all_memories(root interface):
+  Found 0 memories.
+Translate variables
+Translate memories
+Translate allocation tables
+Translate tag tables
+Translate exceptions
+producing exception 'Exception'
+producing exception 'Loop_continue'
+producing exception 'Loop_exit'
+producing exception 'Return_label'
+producing exception 'Throwable'
+Translate enumerated types
+Translate logic functions
+Logic function Non_null_intM
+Logic function Non_null_Object
+Logic function is_sorted
+Translate axiomatic declarations
+Translate lemmas
+Translate functions
+Pre-treatement Function any_string
+Pre-treatement Function non_null_intM
+Pre-treatement Function java_array_length_intM
+Pre-treatement Function non_null_Object
+Pre-treatement Function cons_BinarySearch
+Pre-treatement Function BinarySearch_binary_search
+Function any_string
+Jc_interp: function any_string
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Function non_null_intM
+Jc_interp: function non_null_intM
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+Jc_interp: behavior 'default' has assigns clause with 0 elements
+Jc_interp: behavior 'default' has assigns clause with 0 elements
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Function java_array_length_intM
+Jc_interp: function java_array_length_intM
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+Jc_interp: behavior 'default' has assigns clause with 0 elements
+Jc_interp: behavior 'default' has assigns clause with 0 elements
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Function non_null_Object
+Jc_interp: function non_null_Object
+all_allocs(tag Object):
+  Found 1 allocs.
+all_memories(tag Object):
+  Found 0 memories.
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'normal' has no assigns
+Jc_interp: behavior 'normal' has no assigns
+Function cons_BinarySearch
+Jc_interp: function cons_BinarySearch
+all_allocs(tag BinarySearch):
+  Found 1 allocs.
+all_memories(tag BinarySearch):
+  Found 0 memories.
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Function BinarySearch_binary_search
+Jc_interp: function BinarySearch_binary_search
+all_allocs(tag intM):
+  Found 1 allocs.
+all_memories(tag intM):
+  Found 0 memories.
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'default' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'safety' has no assigns
+Jc_interp: behavior 'success' has no assigns
+Jc_interp: behavior 'success' has no assigns
+Jc_interp: behavior 'failure' has no assigns
+Jc_interp: behavior 'failure' has no assigns
+Produce Why3ml file

@@ -1,0 +1,127 @@
+# InvariantPolicy = Arguments
+# TerminationPolicy = always
+# SeparationPolicy = None
+# AnnotationPolicy = None
+# AbstractDomain = None
+
+predicate Non_null_intM{Here}(intM[0..] x) =
+(\offset_max(x) >= -1)
+
+predicate Non_null_Object{Here}(Object[0..] x) =
+(\offset_max(x) >= 0)
+
+String[0..] any_string()
+;
+
+tag String = Object with {
+}
+
+tag BinarySearch = Object with {
+}
+
+tag Throwable = Object with {
+}
+
+tag Object = {
+}
+
+tag Exception = Object with {
+}
+
+type Object = [Object]
+
+type interface = [interface]
+
+tag interface = {
+}
+
+tag intM = Object with {
+  integer intP;
+}
+
+boolean non_null_intM(! intM[0..] x)
+behavior default:
+  assigns \nothing;
+  ensures (if \result then (\offset_max(x) >= -1) else (x == null));
+;
+
+integer java_array_length_intM(! intM[0..-1] x)
+behavior default:
+  assigns \nothing;
+  ensures ((\result <= 2147483647) &&
+            ((\result >= 0) && (\result == (\offset_max(x) + 1))));
+;
+
+boolean non_null_Object(! Object[0..] x)
+behavior normal:
+  ensures (if \result then (\offset_max(x) == 0) else (x == null));
+;
+
+predicate is_sorted{L}(intM[0..] t) =
+(Non_null_intM(t) &&
+  (\forall integer i;
+    (\forall integer j;
+      ((((0 <= i) && (i <= j)) && (j < (\offset_max(t) + 1))) ==>
+        ((t + i).intP <= (t + j).intP)))))
+
+exception Exception of Exception[0..]
+
+exception Throwable of Throwable[0..]
+
+unit cons_BinarySearch(! BinarySearch[0] this_0){()}
+
+integer BinarySearch_binary_search(intM[0..] t_0, integer v)
+  requires (K_6 : Non_null_intM(t_0));
+behavior default:
+  ensures (K_3 : ((K_2 : ((- 1) <= \result)) &&
+                   (K_1 : (\result < (\offset_max(t_0) + 1)))));
+behavior success:
+  ensures (K_4 : ((\result >= 0) ==> ((t_0 + \result).intP == v)));
+behavior failure:
+  assumes is_sorted{Here}(t_0);
+  ensures (K_5 : ((\result == (- 1)) ==>
+                   (\forall integer k;
+                     (((0 <= k) && (k < (\offset_max(t_0) + 1))) ==>
+                       ((t_0 + k).intP != v)))));
+{  
+   {  
+      (var integer l = (K_28 : 0));
+      
+      {  
+         (var integer u = (K_27 : ((K_26 : java_array_length_intM(t_0)) - 1)));
+         
+         {  
+            loop 
+            behavior default:
+              invariant (K_9 : ((K_8 : (0 <= l)) &&
+                                 (K_7 : (u <= ((\offset_max(t_0) + 1) - 1)))));
+            behavior failure:
+              invariant (K_10 : (\forall integer k_0;
+                                  (((0 <= k_0) &&
+                                     (k_0 < (\offset_max(t_0) + 1))) ==>
+                                    (((t_0 + k_0).intP == v) ==>
+                                      ((l <= k_0) && (k_0 <= u))))));
+            variant (K_11 : (u - l));
+            while ((K_24 : (l <= u)))
+            {  
+               {  
+                  (var integer m);
+                  
+                  {  (m = (K_13 : ((K_12 : (u + l)) / 2)));
+                     (K_17 : 
+                     (assert (K_16 : ((K_15 : (l <= m)) && (K_14 : (m <= u))))));
+                     (if (K_23 : ((K_22 : (t_0 + m).intP) < v)) then (l = 
+                     (K_21 : (m + 1))) else (if (K_20 : ((K_19 : (t_0 + m).intP) >
+                                                          v)) then (u = 
+                                            (K_18 : (m - 1))) else 
+                                            (return m)))
+                  }
+               }
+            };
+            
+            (return (K_25 : (- 1)))
+         }
+      }
+   }
+}
+
