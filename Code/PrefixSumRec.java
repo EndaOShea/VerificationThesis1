@@ -49,21 +49,25 @@ final class PrefixSumRec {
 	  private static int div2 (int x) {
 	    return x/2;
 	  }
-
 	 
 	    
 	/*@ public normal_behavior
-	  @   requires x >= 0;
-	  @   ensures \result == (\product int i; 0 <= i && i < x; 2);
+	  @   requires x == 3;
+	  @   ensures \result == (\product int i; 0 <= i && i < x; i);
 	  @   ensures \result > 0;
 	  @   measured_by x;
 	  @   pure helper spec_public
 	  @*/
 	  private static int pow2(int x) {
-		  return x==0? 1: 2*pow2(x-1);
-		  
-		 
-		  
+		  //return x==0? 1: 2*pow2(x-1);43
+		int count = 1;
+
+		while(x>0)
+		{
+		 count = count*2;
+		 x--;
+		}
+		return count;		  		 		  
 	  }
 	      
 	  
@@ -74,8 +78,8 @@ final class PrefixSumRec {
 	   																		// even and x/2 is also a power of 2 that
 	   																		// will recursively go down to 1 if a power of 2
 	   @   ensures \result ==> ( even(x) != (x == 1) );
-	   @   ensures \result ==> isPow2(div2(x)) != (x == 1);
-	   @   ensures \result == (\exists int b; 0 <= b && b <= 1024; x == (\product int i; 0 <= i && i < b; 2));
+	   @   //ensures \result ==> isPow2(div2(x)) != (x == 1);
+	   @   //ensures \result == (\exists int b; 0 <= b && b <= 1024; x == (\product int i; 0 <= i && i < b; 2));
 	   @   measured_by x;
 	   @   accessible \nothing;
 	   @   pure helper spec_public
@@ -91,7 +95,7 @@ final class PrefixSumRec {
 	 
 	 
 	 /*@
-	  @ requires 0 <= a.length && a.length <= 1000;
+	  @ requires 0 <= a.length && a.length <= Integer.MAX_VALUE;
 	  @ requires 0 <= left && left <= a.length;
 	  @ requires 0 <= right && right <= a.length;
 	  @ pure spec_public
