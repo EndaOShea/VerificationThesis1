@@ -16,8 +16,6 @@ final class LCP {
    @ requires 0 <= x && x < a.length;
    @ requires 0 <= y && y < a.length;
    @ requires x != y;
-
-   
    @ ensures 0 <= \result;
    @ ensures \result <= a.length-x && \result <= a.length-y;
    @ //ensures (\forall int i; 0 <= i && i < \result; a[x+i] == a[y+i] );
