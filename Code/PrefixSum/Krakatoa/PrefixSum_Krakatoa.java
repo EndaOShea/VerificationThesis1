@@ -17,7 +17,8 @@ public class PrefixSum_Krakatoa {
 
       /*@ 
       @   behavior success:
-      @   	ensures (\forall int x y; 0<=x && x<=100 && y<=x ==> is_Even(x) ==>(is_Even(y) ==> is_Even(x+y)) ==> \result);
+      @   	ensures (\forall int x y; 0<=x && x<=100 && y<=x ==> is_Even(x) ==>
+			@																				(is_Even(y) ==> is_Even(x+y)) ==> \result);
       @//   ensures \result;
       @*/
     private static boolean evenSumLemma() { return true; }
