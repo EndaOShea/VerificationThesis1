@@ -50,12 +50,23 @@ final class PrefixSumRec {
 	  private static int div2 (int x) {
 	    return x/2;
 	  }
+	  
+	/*@   requires x > 0 && x < Integer.MAX_VALUE/2;
+	  @   ensures \result/2 == x;
+	  @   ensures \result == x*2;
+	  @   ensures \result > x;
+	  @   accessible \nothing;
+	  @   pure helper spec_public
+	  @*/
+	  private static int mult2 (int x) {
+	    return x*2;
+	  }
 	 
 	    
 	/*@ public normal_behavior
-	  @   requires x == 3;
+	  @   requires x >= 0 && x < 5;
 	  @// ensures \result == (\product int i; 0 <= i && i < x; 2);
-	  @   ensures \result > 0 && \result < Integer.MAX_VALUE;
+	  @   ensures \result > 0 && \result < 33;
 	  @// measured_by x;
 	  @   assignable count;
 	  @   spec_public
@@ -64,28 +75,38 @@ final class PrefixSumRec {
 		 // return x==0? 1: 2*pow2(x-1);
 		count = 1;
 
-		//@ maintaining count >= 1 && x >= 0; 
+		// @ maintaining count > 0 && count < 33; 
+		// @ maintaining x >= 0;
+		// @ maintaining _isPow2(\old(count)) == _isPow2(count);
+		// @ decreases x;
 		while(x>0)
 		{
-		 count += count;
+		 //@ assume x!=0;	
+		 count = mult2(count);
 		 x--;
 		}
+		
+		//@ assume x==0;
 		return count;	  		 		  
 	  }
 	      
-	  
+	  //@ ensures \result == (x==1||x==2||x==4||x==8||x==16||x==32);
+	  //@ model public pure helper static boolean _isPow2(int x);
+  
 		/*@ normal_behavior
-	   @   requires x > 0 && x < Integer.MAX_VALUE;
+	   @   requires x > 0 && x < 33;
 	   @   ensures \result ==> ( even(x) != (x == 1) );
-	   @   accessible \nothing;
+	   @   ensures \result <==> _isPow2(x);
 	   @   pure helper spec_public
 	   @*/
 	 private static boolean isPow2(int x){
+		 
 		 /*@ 		   
-		   @ maintaining x >= 1;
-		   @ decreases x/2; 
+		   @ maintaining x > 0 && x < 33;
+		   @ maintaining _isPow2(\old(x)) == _isPow2(x); 
+		   @ decreases x; 
 			 @*/
-			while(x%2 == 0){
+			while(x%2 == 0)			{
 				x = div2(x);
 			}
 
@@ -95,7 +116,6 @@ final class PrefixSumRec {
 
 			return false;
 	 }
-	 
 	 
 	 /*@
 	  @ requires 0 <= a.length && a.length <= Integer.MAX_VALUE / 2;
