@@ -20,7 +20,8 @@ final class PrefixSumRec {
     }
    
 	    /*@ normal_behavior
-	    @   ensures \result == (\forall int x, y; 0<=x && x<=100 && y<=x; even(x) == (even(y) == even(x+y))); //if x and y are even then so is x+y
+	    @   ensures \result == (\forall int x, y; 0<=x && x<=100 && y<=x; 
+		@					even(x) == (even(y) == even(x+y))); //if x and y are even then so is x+y
 	    @   ensures \result;
 	    @   accessible \nothing;
 	    @   pure helper spec_public
@@ -103,6 +104,7 @@ final class PrefixSumRec {
 		/*@ public normal_behavior
 		  @   requires x >= 0;
 		  @   ensures \result > 0 && \result < 33;
+		  @   ensures _isPow2(\result);
 		  @   assignable count;
 		  @   spec_public
 		  @*/
