@@ -21,9 +21,9 @@ public class PrefixSum {
 			@		assigns \nothing;
       @   behavior success:
       @   	ensures (\forall int x y; 0<=x && x<=100 && y<=x ==> is_Even(x)
-			@																											 ==>(is_Even(y)
-			@																											 ==> is_Even(x+y)) 
-			@																											 ==> \result);
+			@												 															 ==>(is_Even(y)
+			@ 																										 ==> is_Even(x+y))
+			@ 																										 ==> \result);
       @*/
     private static boolean evenSumLemma() { return true; }
 
@@ -55,14 +55,14 @@ public class PrefixSum {
 	  @   requires x >= 0;
 		@		assigns \nothing;	  
 	  @   behavior success:
-	  @   	ensures \result > 0;		
+	  @   	ensures (\result > 0  <==> is_Pow2(\result));	
 	  @*/
 	  private static int pow2(int x) {
 		int count = 1;
 
-		/*@ loop_invariant x >= 0 && count >= 1; 
+		/*@
+		  @ loop_invariant x >= 0 && count >= 1 && is_Pow2(\old(count) <==> is_Pow2(count));
 		  @ loop_variant x-1;
-		  @// assigns count;
  		@*/
 		while(x > 0){
 			count += count;
